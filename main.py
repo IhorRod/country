@@ -11,7 +11,7 @@ import json
 ABSACC = 0.95
 
 locations = pd.read_csv('locations.csv')['location'].unique()
-datacities = pd.read_csv('geonames-all-cities-with-a-population-1000.csv', sep=';')
+datacities = pd.read_csv('towns.csv', sep=',')
 datacities.sort_values('Population', inplace=True)
 # countries = dict()
 dicttowns = dict()
